@@ -15,11 +15,11 @@
   },
   "scripts": {
     "test": "exit 1",
-    "lint": "eslint \"./src/**/*.js\""
+    "lint": "eslint \"./**/**/*.js\""
   },
   "lint-staged": {
-    "*.{js}": [
-      "eslint --fix"
+    "**/*.{js,jsx}": [
+      "npm run lint"
     ]
   },
   "husky": {

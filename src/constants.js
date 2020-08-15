@@ -7,7 +7,7 @@ const BROWSER = {
 const COMMAND = {
   START: 'start',
   BUILD: 'build',
-  MAN_KEY: 'mankey'
+  MAN_KEY: 'mankey',
   // TODO: Tests
   // TODO: E2E tests with puppeteer
   // TODO: Storybook
