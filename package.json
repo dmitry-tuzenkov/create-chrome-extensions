@@ -1,10 +1,21 @@
 {
-  "name": "create-chrome-extensions",
+  "name": "crext",
   "version": "1.0.0",
-  "description": "Toolkit for creation chrome extensions with webpack and react",
+  "description": "Create chrome extensions. A toolkit for creation chrome extensions with webpack and react",
   "main": "index.js",
+  "files": [
+    "src",
+    "template"
+  ],
+  "bin": {
+    "crext": "./bin/create.js",
+    "crext_run": "./bin/scripts.js",
+    "crext_build": "./bin/scripts.js",
+    "create-chrome-extensions": "./src/create-chrome-extensions.js"
+  },
   "scripts": {
-    "test": "exit 1"
+    "test": "exit 1",
+    "lint": "eslint \"./src/**/*.js\""
   },
   "repository": {
     "type": "git",
@@ -23,14 +34,6 @@
   "author": "dmitry.tuzenkov@gmail.com",
   "private": true,
   "license": "MIT",
-  "files": [
-    "src",
-    "template"
-  ],
-  "bin": {
-    "crext": "./src/create-chrome-extensions.js",
-    "create-chrome-extensions": "./src/create-chrome-extensions.js"
-  },
   "bugs": {
     "url": "https://github.com/dmitry-tuzenkov/create-chrome-extensions/issues"
   },
@@ -41,6 +44,7 @@
     "command-line-args": "^5.1.1",
     "commander": "^6.0.0",
     "copy-webpack-plugin": "^6.0.3",
+    "cross-spawn": "^7.0.3",
     "css-loader": "^4.2.1",
     "debug": "^4.1.1",
     "dotenv": "^8.2.0",
@@ -62,6 +66,11 @@
     "zip-webpack-plugin": "^3.0.0"
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.6",
     "husky": "^4.2.5",
     "npm-check-updates": "^7.1.1",
     "prettier": "^2.0.5"
