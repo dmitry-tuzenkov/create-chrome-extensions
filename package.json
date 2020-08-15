@@ -1,0 +1,69 @@
+{
+  "name": "create-chrome-extensions",
+  "version": "1.0.0",
+  "description": "Toolkit for creation chrome extensions with webpack and react",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitry-tuzenkov/create-chrome-extensions.git"
+  },
+  "keywords": [
+    "chrome",
+    "extension",
+    "browser",
+    "webpack",
+    "react",
+    "scripts",
+    "app",
+    "tools"
+  ],
+  "author": "dmitry.tuzenkov@gmail.com",
+  "private": true,
+  "license": "MIT",
+  "files": [
+    "src",
+    "template"
+  ],
+  "bin": {
+    "crext": "./src/create-chrome-extensions.js",
+    "create-chrome-extensions": "./src/create-chrome-extensions.js"
+  },
+  "bugs": {
+    "url": "https://github.com/dmitry-tuzenkov/create-chrome-extensions/issues"
+  },
+  "homepage": "https://github.com/dmitry-tuzenkov/create-chrome-extensions#readme",
+  "dependencies": {
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "command-line-args": "^5.1.1",
+    "commander": "^6.0.0",
+    "copy-webpack-plugin": "^6.0.3",
+    "css-loader": "^4.2.1",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "eslint-loader": "^4.0.2",
+    "file-loader": "6.0.0",
+    "fs-extra": "^9.0.1",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.10.0",
+    "node-sass": "^4.14.1",
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "sass-loader": "9.0.3",
+    "script-ext-html-webpack-plugin": "^2.1.4",
+    "style-loader": "1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-bundle-analyzer": "^3.8.0",
+    "webpack-extension-manifest-plugin": "^0.5.0",
+    "webpack-extension-reloader": "^1.1.4",
+    "webpack-merge": "^5.1.1",
+    "zip-webpack-plugin": "^3.0.0"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "npm-check-updates": "^7.1.1",
+    "prettier": "^2.0.5"
+  }
+}

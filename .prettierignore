@@ -1,0 +1,23 @@
+node_modules
+temp
+dist
+build
+build_prod
+coverage
+src/vendor
+
+.tmp
+.env
+.sass-cache
+.DS_Store
+.idea
+*.log
+
+# sign key
+key.pem
+ext.id
+manifest.key
+package-lock.json
+
+
+*.snap
