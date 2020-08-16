@@ -74,3 +74,4 @@ coverage
 .idea
 *.log
 .npmrc
+*.pem

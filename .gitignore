@@ -70,3 +70,4 @@ temp
 .idea
 *.log
 .npmrc
+*.pem
