@@ -5,8 +5,6 @@ const clArgs = require('command-line-args')
 const dotenv = require('dotenv')
 const cwd = process.cwd()
 const { COMMAND, ARGUMENTS, STAGE, BROWSER } = require('../src/constants')
-const initCommand = require('../src/init-command')
-const webpackCommand = require('../src/webpack-command')
 
 dotenv.config({ path: path.join(cwd, '.env') })
 
@@ -15,18 +13,20 @@ const mainOptions = clArgs(definition, { stopAtFirstUnknown: true })
 
 switch (mainOptions.command) {
   case COMMAND.MAN_KEY:
-    spawn.sync('bash', [path.join(cwd, 'gen-key.sh')], {
+    spawn.sync('bash', [path.join(__dirname, '../gen-key.sh')], {
       stdio: 'inherit',
     })
     break
 
   case COMMAND.INIT:
     const { name, folder } = mainOptions
+    const initCommand = require('../src/init-command')
     initCommand({ name, folder })
     break
 
   case COMMAND.BUILD:
   case COMMAND.START:
+    const webpackCommand = require('../src/webpack-command')
     const { command, stage, browser } = mainOptions
     webpackCommand({ command, stage, browser })
     break

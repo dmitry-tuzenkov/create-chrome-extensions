@@ -38,7 +38,7 @@ module.exports = ({ folder, name }) => {
       version: '1.0.0',
     })
 
-    overrideJsonSync(path.join(APP_PATH, 'manifest.json'), {
+    overrideJsonSync(path.join(APP_PATH, 'src/manifest.json'), {
       name: appName,
       short_name: appName,
       version: '1.0.0.0',
