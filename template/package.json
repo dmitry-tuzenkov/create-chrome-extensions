@@ -6,7 +6,7 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "__postinstall": "crext mankey",
+    "postinstall": "crext mankey",
     "start": "crext start -b chrome -s dev",
     "build:chrome": "crext build -b chrome -s prod",
     "build:firefox": "crext build -b firefox -s prod",
