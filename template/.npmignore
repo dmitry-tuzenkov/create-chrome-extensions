@@ -1,4 +1,9 @@
 node_modules
+temp
+dist
+build
+coverage
+
 .tmp
 .env
 .sass-cache
@@ -10,7 +15,5 @@ node_modules
 key.pem
 ext.id
 manifest.key
-package-lock.json
-
 
 *.snap

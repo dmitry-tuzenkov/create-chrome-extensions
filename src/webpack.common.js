@@ -24,7 +24,7 @@ module.exports = (configs, args) => {
     manifest.version = VERSION
 
     if (STAGE !== 'prod') {
-      manifest.name = `${manifest.name} __${STAGE.toUpperCase()}_ENV__`
+      manifest.name = `${manifest.name} __STAGE_${STAGE.toUpperCase()}__`
     }
 
     if (E2E) {
@@ -96,7 +96,7 @@ module.exports = (configs, args) => {
       new webpack.EnvironmentPlugin({
         ...configs.envVars,
         ...Object.keys(args).reduce((acc, key) => {
-          acc['ARG_' + key.toUpperCase()] = args[key]
+          acc[`__${key.toUpperCase()}__`] = args[key]
           return acc
         }, {}),
       }),

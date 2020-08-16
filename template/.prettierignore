@@ -1,4 +1,9 @@
 node_modules
+temp
+dist
+build
+coverage
+
 .tmp
 .env
 .sass-cache

@@ -40,7 +40,7 @@ module.exports = ({ args }) => ({
       if (args.browser === 'firefox') {
         manifest.applications = {
           gecko: {
-            id: '1a706f8e92e8aacc0074d811b8838c4bd46cb2b8@tmp',
+            id: '93aa706f8e92e8aacc0074d811b8838c4bd46cb2xc86@tmp',
             strict_min_version: '57.0',
           },
         }

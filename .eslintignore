@@ -1,7 +1,2 @@
 node_modules
 temp
-dist
-build
-build_prod
-src/vendor
-__tests__

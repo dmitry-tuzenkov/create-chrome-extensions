@@ -4,14 +4,12 @@
   "description": "Create chrome extensions. A toolkit for creation chrome extensions with webpack and react",
   "main": "index.js",
   "files": [
+    "bin",
     "src",
     "template"
   ],
   "bin": {
-    "crext": "./bin/create.js",
-    "crext_run": "./bin/scripts.js",
-    "crext_build": "./bin/scripts.js",
-    "create-chrome-extensions": "./src/create-chrome-extensions.js"
+    "crext": "./bin/create.js"
   },
   "scripts": {
     "test": "exit 1",

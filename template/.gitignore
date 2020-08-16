@@ -65,8 +65,12 @@ node_modules
 temp
 .tmp
 .env
+dist
 .sass-cache
 .DS_Store
+build
+build_prod
+coverage
 .idea
 *.log
 .npmrc
