@@ -18,6 +18,7 @@ const alias = {
 
 // WARNING! Every process.env variable should be defined here
 const envVars = {
+  NODE_ENV: 'development',
   API_KEY: '',
   BUILD_NUMBER: '0',
   // SAMPLE_ENV_VARIABLE: 'DEFAULT_VALUE'
@@ -29,8 +30,8 @@ module.exports = ({ args }) => ({
     alias,
     envVars,
 
-    extend(config) {
-      return config
+    extend(originalConfig) {
+      return originalConfig
     },
 
     extendManifest(originalManifest) {

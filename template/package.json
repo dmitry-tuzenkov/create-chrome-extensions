@@ -1,0 +1,93 @@
+{
+  "name": "willberenamed",
+  "version": "0.0.1",
+  "description": "",
+  "main": "",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "crext start -b chrome -s dev",
+    "build:chrome": "crext build -b chrome -s prod",
+    "build:firefox": "crext build -b firefox -s prod",
+    "test": "exit 1",
+    "lint": "eslint **/*.js"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    
+  },
+  "resolutions": {
+  },
+  "devDependencies": {
+    "@babel/core": "7.6.4",
+    "@babel/plugin-proposal-class-properties": "7.5.5",
+    "@babel/plugin-proposal-decorators": "7.6.0",
+    "@babel/plugin-proposal-export-namespace-from": "7.5.2",
+    "@babel/plugin-proposal-function-sent": "7.5.0",
+    "@babel/plugin-proposal-json-strings": "7.2.0",
+    "@babel/plugin-proposal-numeric-separator": "7.2.0",
+    "@babel/plugin-proposal-throw-expressions": "7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "7.2.0",
+    "@babel/plugin-syntax-import-meta": "7.2.0",
+    "@babel/plugin-transform-runtime": "7.6.2",
+    "@babel/polyfill": "7.6.0",
+    "@babel/preset-env": "7.6.3",
+    "@babel/preset-react": "7.6.3",
+    "@babel/register": "7.6.2",
+    "@babel/runtime": "7.6.3",
+    "@storybook/react": "^5.2.4",
+    "@types/jest": "^24.0.19",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "10.0.3",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "8.0.6",
+    "babel-plugin-lodash": "3.3.4",
+    "browserslist": "4.7.1",
+    "canvas": "^2.6.0",
+    "enzyme": "3.10.0",
+    "enzyme-adapter-react-16": "1.15.1",
+    "eslint": "6.5.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jest": "22.19.0",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-watch": "6.0.1",
+    "https-proxy-agent": "^3.0.0",
+    "husky": "3.0.9",
+    "identity-obj-proxy": "3.0.0",
+    "jest": "^24.9.0",
+    "jest-css-modules-transform": "^3.1.0",
+    "jest-enzyme": "^7.1.1",
+    "jest-fetch-mock": "^2.1.2",
+    "jsdom": "^15.2.0",
+    "koa-connect": "^2.0.1",
+    "lint-staged": "9.4.2",
+    "npm-check-updates": "^3.1.24",
+    "npm-license-crawler": "^0.2.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.18.2",
+    "pretty-quick": "2.0.0",
+    "react-hot-loader": "4.12.15",
+    "react-test-renderer": "^16.10.2",
+    "script-ext-html-webpack-plugin": "^2.1.4",
+    "standard": "^14.3.1"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Extension Name",
+  "short_name": "Extension Short Name",
+  "version": "0.0.0.1",
+  "manifest_version": 2,
+  "description": "Just Dummy Example",
+  "permissions": [
+    "tabs",
+    "storage",
+    "cookies",
+    "contextMenus",
+    "*://*.google.com/*"
+  ],
+  "background": {
+    "scripts": [
+      "background.bundle.js"
+    ]
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "assets/icons/icon-128px.png"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
