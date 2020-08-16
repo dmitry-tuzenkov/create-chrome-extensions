@@ -3,7 +3,7 @@ const webpack = require('webpack')
 const debug = require('debug')('crext:webpack')
 const webpackDev = require('./webpack.dev')
 const webpackProd = require('./webpack.prod')
-// const {} = require('./constants')
+const { COMMAND } = require('./constants')
 
 module.exports = ({ command, stage, browser }) => {
   const cwd = process.cwd()
@@ -14,7 +14,7 @@ module.exports = ({ command, stage, browser }) => {
   debug('browser is', browser)
   debug('cwd is', cwd)
 
-  const webpackHandler = stage === 'prod' ? webpackProd : webpackDev
+  const webpackHandler = command === COMMAND.BUILD ? webpackProd : webpackDev
   const configsFn = require(path.resolve(cwd, './crext.config.js'))
   // TODO: Validate with JOI entrypoints or configs
   const configs = configsFn({ args })

@@ -101,11 +101,13 @@ module.exports = (configs, args) => {
         }, {}),
       }),
 
-      new CopyPlugin([
-        { from: 'src/manifest.json' },
-        { from: 'src/assets/icons', to: 'assets/icons' },
-        { from: 'src/vendor', to: 'vendor' },
-      ]),
+      new CopyPlugin({
+        patterns: [
+          { from: 'src/manifest.json' },
+          { from: 'src/assets/icons', to: 'assets/icons' },
+          { from: 'src/vendor', to: 'vendor' },
+        ],
+      }),
 
       ...htmlEntries.map(({ htmlEntry, name }) => {
         const { base } = path.parse(htmlEntry)

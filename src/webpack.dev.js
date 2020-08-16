@@ -1,4 +1,4 @@
-const merge = require('webpack-merge')
+const { merge } = require('webpack-merge')
 const ChromeExtensionReloader = require('webpack-extension-reloader')
 
 const commonConfig = require('./webpack.common.js')

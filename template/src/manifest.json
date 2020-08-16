@@ -20,7 +20,8 @@
     "default_popup": "popup.html"
   },
   "icons": {
-    "128": "assets/icons/icon-128px.png"
+    "48": "assets/icons/icons8-chrome-50.png",
+    "128": "assets/icons/icons8-chrome-100.png"
   },
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }

@@ -1,6 +1,6 @@
 /* eslint no-undef: 0 */
 const { join } = require('path')
-const merge = require('webpack-merge')
+const { merge } = require('webpack-merge')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const ZipWebpackPlugin = require('zip-webpack-plugin')
