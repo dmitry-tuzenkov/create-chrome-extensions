@@ -55,7 +55,7 @@ or
 ```
 npm start
 ```
-
+![Screenshot](screenshot2.png)
 
 
 **npm run build**

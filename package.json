@@ -6,7 +6,8 @@
   "files": [
     "bin",
     "src",
-    "template"
+    "template",
+    "gen-key.sh"
   ],
   "bin": {
     "crext": "./bin/create.js"
