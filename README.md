@@ -25,6 +25,7 @@ Node version from 12.
 ```
 crext init my-ext
 ```
+![Screenshot](screenshot2.png)
 
 It will create a folder` my-ext` with new extension inside
 
