@@ -76,6 +76,7 @@
     "zip-webpack-plugin": "^3.0.0"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.7.0",
     "eslint-config-prettier": "^6.11.0",
