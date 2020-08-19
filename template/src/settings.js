@@ -5,6 +5,8 @@ export default {
   // dev defined
   ABOUT_URL:
     'https://github.com/dmitry-tuzenkov/create-chrome-extensions#readme',
+  UNINSTALL_URL:
+    'https://github.com/dmitry-tuzenkov/create-chrome-extensions#uninstall',
   PRIVACY_POLICY_URL:
     'https://github.com/dmitry-tuzenkov/create-chrome-extensions#license',
 }

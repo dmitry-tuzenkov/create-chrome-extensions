@@ -1,7 +1,7 @@
 {
-  "name": "Extension Name",
-  "short_name": "Extension Short Name",
-  "version": "0.0.0.1",
+  "name": "app1",
+  "short_name": "app1",
+  "version": "1.0.0.0",
   "manifest_version": 2,
   "description": "Just Dummy Example",
   "permissions": [
@@ -9,7 +9,7 @@
     "storage",
     "cookies",
     "contextMenus",
-    "*://*.google.com/*"
+    "notifications"
   ],
   "background": {
     "scripts": [

@@ -64,4 +64,8 @@ export default {
   createContextMenus(props, callback) {
     return chrome.contextMenus.create(props, callback)
   },
+
+  createNotification(props) {
+    return chrome.notifications.create(props)
+  },
 }

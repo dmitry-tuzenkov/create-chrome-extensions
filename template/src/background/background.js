@@ -1,6 +1,8 @@
 import settings from '../settings'
 import browserApi from '../common/browser-api'
 
+const iconUrl = '/assets/icons/icons8-chrome-100.png'
+
 console.log('settings', settings)
 console.log('browserApi', {
   browser: settings.__BROWSER__,
@@ -15,13 +17,25 @@ const INSTALL_REASON = {
 }
 
 browserApi.onInstalled((details) => {
+  let message
+
   if (details.reason === INSTALL_REASON.INSTALL) {
     console.log(`Extension has been installed`, details)
+    message = 'Extension has been installed'
+    browserApi.setUninstallUrl(settings.UNINSTALL_URL)
   }
 
   if (details.reason === INSTALL_REASON.UPDATE) {
     console.log(`Extension has been updated`, details)
+    message = 'Extension has been updated'
   }
+
+  browserApi.createNotification({
+    message: `${message} - Thanks for using Crext!`,
+    title: 'Extension',
+    type: 'basic',
+    iconUrl,
+  })
 })
 
 browserApi.createContextMenus({
