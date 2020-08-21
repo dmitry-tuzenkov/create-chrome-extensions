@@ -1,7 +1,7 @@
 {
-  "name": "app1",
-  "short_name": "app1",
-  "version": "1.0.0.0",
+  "name": "Example",
+  "short_name": "expl",
+  "version": "0.0.0.1",
   "manifest_version": 2,
   "description": "Just Dummy Example",
   "permissions": [
@@ -19,9 +19,15 @@
   "browser_action": {
     "default_popup": "popup.html"
   },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
   "icons": {
     "48": "assets/icons/icons8-chrome-50.png",
     "128": "assets/icons/icons8-chrome-100.png"
   },
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "web_accessible_resources": [
+    "vendor/*"
+  ]
 }

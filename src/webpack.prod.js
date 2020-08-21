@@ -40,8 +40,6 @@ module.exports = (config) => {
               options: {
                 sourceMap: false,
                 modules: true,
-                camelCase: true,
-                localIdentName: '[local]___[hash:base64:5]',
               },
             },
             'sass-loader',

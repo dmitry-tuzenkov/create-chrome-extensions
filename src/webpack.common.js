@@ -115,7 +115,7 @@ module.exports = (configs, args) => {
         return new HtmlWebpackPlugin({
           chunks: ['common', name],
           filename: base,
-          template: `!!html-webpack-plugin/lib/loader.js!${htmlEntry}`,
+          template: htmlEntry,
           minify: {
             removeComments: true,
             collapseWhitespace: true,

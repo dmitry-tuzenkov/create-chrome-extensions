@@ -1,15 +1,35 @@
-const entries = [
-  {
+const path = require('path')
+const { utils, constants } = require('crext')
+
+// TODO:
+// const CopyPlugin = require('copy-webpack-plugin')
+// const replaceInBuffer = require('buffer-replace')
+
+// Entries
+
+const ENTRIES = {
+  POPUP_ENTRY: {
+    path: './src/popup/popup.js',
+    name: 'popup',
+    htmlEntry: './src/popup/popup.html',
+  },
+  OPTIONS_ENTRY: {
+    path: './src/options/options.js',
+    name: 'options',
+    htmlEntry: './src/options/options.html',
+  },
+  BACKGROUND_ENTRY: {
     path: './src/background/background.js',
     name: 'background',
   },
-  // {
-  //   path: 'newtab/newtab.js',
-  //   name: 'newtab',
-  //   htmlEntry: 'newtab/newtab.html'
-  // }
-]
+  NEWTAB_ENTRY: {
+    path: './src/newtab/newtab.js',
+    name: 'newtab',
+    htmlEntry: './src/newtab/newtab.html',
+  },
+}
 
+const entries = [ENTRIES.BACKGROUND_ENTRY, ENTRIES.NEWTAB_ENTRY]
 const srcDir = (dir = '.') => path.join(__dirname, '/src', dir)
 
 const alias = {
@@ -31,7 +51,7 @@ module.exports = ({ args }) => ({
     envVars,
 
     extend(originalConfig) {
-      return originalConfig
+      return overridePlugin(originalConfig, args)
     },
 
     extendManifest(originalManifest) {
@@ -59,3 +79,29 @@ module.exports = ({ args }) => ({
     },
   },
 })
+
+const overridePlugin = (config, args) => {
+  //   const copyPlugin = new CopyPlugin([
+  //     { from: 'src/manifest.json' },
+  //     { from: 'src/assets/icons', to: 'assets/icons' },
+  //     {
+  //       from: 'src/vendor',
+  //       to: 'vendor',
+  //       transform: (contents) => {
+  //         if (args.browser === 'firefox') {
+  //           return replaceInBuffer(contents, 'chrome-extension', 'moz-extension')
+  //         }
+
+  //         return contents
+  //       },
+  //     },
+  //   ])
+
+  //   config.plugins = utils.replacePlugin(
+  //     config.plugins,
+  //     (pluginName) => pluginName === 'CopyPlugin',
+  //     copyPlugin
+  //   )
+
+  return config
+}
