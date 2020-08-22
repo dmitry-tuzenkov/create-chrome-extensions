@@ -5,6 +5,14 @@ export default {
     return chrome.runtime.id
   },
 
+  getExtensionVersion() {
+    return chrome.runtime.getManifest().version
+  },
+
+  getPlatformInfo() {
+    return new Promise((resolve) => chrome.runtime.getPlatformInfo(resolve))
+  },
+
   getStoreUrl() {
     return CHROME_WEBSTORE_URL
   },
@@ -14,23 +22,23 @@ export default {
   },
 
   getCurrentTab() {
-    return new Promise((resolve) => {
+    return new Promise((resolve) =>
       chrome.tabs.query({ active: true, currentWindow: true }, (tab) =>
         resolve(tab[0])
       )
-    })
+    )
   },
 
   getTabById(tabid) {
-    return new Promise((resolve) => {
+    return new Promise((resolve) =>
       chrome.tabs.get(tabid, (tab) => resolve(tab))
-    })
+    )
   },
 
   getAllTabs() {
-    return new Promise((resolve) => {
+    return new Promise((resolve) =>
       chrome.tabs.query({}, (tabs) => resolve(tabs))
-    })
+    )
   },
 
   createTab(props, callback) {

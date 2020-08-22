@@ -9,4 +9,5 @@ export default {
     'https://github.com/dmitry-tuzenkov/create-chrome-extensions#uninstall',
   PRIVACY_POLICY_URL:
     'https://github.com/dmitry-tuzenkov/create-chrome-extensions#license',
+  HEAP_ANALYTICS_ID: '<analytics_id>',
 }
