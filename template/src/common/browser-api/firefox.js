@@ -1,9 +1,11 @@
 import chrome from './chrome'
 
+const FIREFOX_WEBSTORE_URL = 'https://addons.mozilla.org'
+
 export default {
   ...chrome,
 
   getStoreUrl() {
-    return 'https://addons.mozilla.org'
+    return FIREFOX_WEBSTORE_URL
   },
 }
