@@ -45,6 +45,7 @@ const envVars = {
 }
 
 module.exports = ({ args }) => ({
+  version: '1.0.0',
   webpack: {
     entries,
     alias,

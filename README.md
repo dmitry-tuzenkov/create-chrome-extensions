@@ -12,7 +12,6 @@ npm i crext -g
 Create react app browser extension works on chrome and firefox.
 If something doesn’t work or you have a proposal, please [create an issue](https://github.com/dmitry-tuzenkov/create-chrome-extensions/issues/new)
 
-[Add image or gif with terminal]
 
 
 
