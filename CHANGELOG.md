@@ -1,3 +1,12 @@
+## [1.0.6](https://github.com/dmitry-tuzenkov/create-chrome-extensions/compare/v1.0.5...v1.0.6) (2020-08-23)
+
+
+### Features
+
+* **package:** update package json ([b3645c5](https://github.com/dmitry-tuzenkov/create-chrome-extensions/commit/b3645c557e0225db89e979250a637c0baf2a3dd5))
+
+
+
 ## [1.0.5](https://github.com/dmitry-tuzenkov/create-chrome-extensions/compare/v1.0.4...v1.0.5) (2020-08-23)
 
 
