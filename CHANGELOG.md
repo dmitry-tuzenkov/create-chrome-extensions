@@ -1,3 +1,21 @@
+## [1.0.5](https://github.com/dmitry-tuzenkov/create-chrome-extensions/compare/v1.0.4...v1.0.5) (2020-08-23)
+
+
+### Bug Fixes
+
+* **config:** Update config and README ([f29f817](https://github.com/dmitry-tuzenkov/create-chrome-extensions/commit/f29f8173e94f1fef3cd0ebb68dd36220be8ffca6))
+
+
+### Features
+
+* **chrome:** notifications ([340481c](https://github.com/dmitry-tuzenkov/create-chrome-extensions/commit/340481c02a3a1bdfd7ea9cccdf2c3d4bf5d3a0e2))
+* **config:** Update configuration ([f517e0c](https://github.com/dmitry-tuzenkov/create-chrome-extensions/commit/f517e0cad2068bd6f6e744cd53afcc5ff80c3223))
+* **listeners:** Add analytics and install listeners + event-api ([b4661c6](https://github.com/dmitry-tuzenkov/create-chrome-extensions/commit/b4661c666f87f44db85717b91caffc42ad62f922))
+* **react:** add react ([144474a](https://github.com/dmitry-tuzenkov/create-chrome-extensions/commit/144474adbd373b03733ccaac138f3fee18f2b4c1))
+* **services:** Added analytics and storage apis ([92bada2](https://github.com/dmitry-tuzenkov/create-chrome-extensions/commit/92bada27c4d4e383a78db4ab9d3fe755a5583921))
+
+
+
 ## 1.0.4 (2020-08-18)
 
 
