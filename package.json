@@ -1,6 +1,6 @@
 {
   "name": "crext",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Create chrome extensions. A toolkit for creation chrome extensions with webpack and react",
   "main": "src/index.js",
   "files": [
