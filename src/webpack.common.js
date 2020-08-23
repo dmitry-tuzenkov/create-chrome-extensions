@@ -4,6 +4,7 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
+const replaceInBuffer = require('buffer-replace')
 const WebpackExtensionManifestPlugin = require('webpack-extension-manifest-plugin')
 const commonPaths = require('./paths')
 const cwd = process.cwd()
@@ -105,7 +106,22 @@ module.exports = (configs, args) => {
         patterns: [
           { from: 'src/manifest.json' },
           { from: 'src/assets/icons', to: 'assets/icons' },
-          { from: 'src/vendor', to: 'vendor' },
+          {
+            from: 'src/vendor',
+            to: 'vendor',
+            transform: (contents) => {
+              // TODO: Use constants instead strings
+              if (args.browser === 'firefox') {
+                return replaceInBuffer(
+                  contents,
+                  'chrome-extension',
+                  'moz-extension'
+                )
+              }
+
+              return contents
+            },
+          },
         ],
       }),
 
