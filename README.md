@@ -22,7 +22,7 @@ Node version from 12.
 ### npm
 
 ```
-crext init my-ext
+crext init -n my-ext
 ```
 ![Screenshot](screenshot1.png)
 
