@@ -42,7 +42,7 @@
     "tools"
   ],
   "author": "dmitry.tuzenkov@gmail.com",
-  "private": true,
+  "private": false,
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dmitry-tuzenkov/create-chrome-extensions/issues"
