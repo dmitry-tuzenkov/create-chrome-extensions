@@ -1,8 +1,8 @@
 # Crext
 Create react chrome extension toolkit (Create chrome extensions)
 
-![npm version](https://img.shields.io/github/package-json/v/dmitry-tuzenkov/create-chrome-extensions)
-![downloads](https://img.shields.io/npm/dy/crext)
+[![npm version](https://img.shields.io/github/package-json/v/dmitry-tuzenkov/create-chrome-extensions)](https://www.npmjs.com/package/crext)
+[![downloads](https://img.shields.io/npm/dy/crext)](https://www.npmjs.com/package/crext)
 
 ## Quick Overview
 
